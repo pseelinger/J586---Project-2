@@ -34,19 +34,19 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: black;
     border: none;
     outline: none;
-    background: transparent;
+    background: black;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
-    outline: none;
-    background: transparent;
+    color: black;
+    outline: blue;
+    background: black;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -86,11 +86,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '<';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '>';
 }
 
 .slick-next
@@ -104,11 +104,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '>';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '<';
 }
 
 /* Dots */
@@ -151,16 +151,17 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     padding: 5px;
+    border-radius: 50%;
 
     cursor: pointer;
 
-    color: transparent;
+    color: blue;
     border: 0;
     outline: none;
-    background: transparent;
+    background-color: #3498db;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -182,10 +183,8 @@
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
-
-    content: '•';
+    width: 40px;
+    height: 40px;
     text-align: center;
 
     opacity: .25;

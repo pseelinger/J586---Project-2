@@ -3,9 +3,26 @@ h3{
     text-align: center;
     font-size: 1.5em;
 }
-.slider, .nav-box{
-    outline: 2px solid #3498db;
+.slide-pic{
+    height: 55%;
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.nav-box{
-    margin: 10px;
+.slick-slide.slick-current.slick-active{
+    outline: none;
+}
+.nav-pic{
+    height: 5%;
+    width: 80%;
+}
+.slider-nav div{
+    margin: 20px;
+    outline: none;
+    margin-top: 5px;
+}
+div.slick-slide.slick-cloned.slick-active h3{
+    outline: 3px solid #3498db;
+    padding: 60px 30px 60px 30px;
 }

@@ -1,23 +1,23 @@
 function setupSlider() {
   $(document).ready(function(){
-  $('.slider').slick({
-    speed: 300,
+  $('.slider-main').slick({
+    speed: 600,
     slidesToShow: 1,
-    adaptiveHeight: true,
     swipeToSlide: true,
-    arrows: true,
+    fade: true,
+    mobileFirst: true,
+    adaptiveHeight: true,
+    arrows: true
   });
-});
-$(document).ready(function(){
-  $('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider',
-    centerMode:true,
-    focusOnSelect: true
-  });
-});
-}
+});$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-main',
+  centerMode: true,
+  focusOnSelect: true,
+  mobileFirst: true,
+  arrows: false
+})};
 function addQuiz(){
   var quiz = jQuery('#quiz').quiz('0Arenb9rAosmbdG5GWHFXbWJlN1hTR2ZmN3lZMVZkOHc');
   setupSlider();
@@ -31,3 +31,4 @@ function addScroll(){
 $(document).ready(function(){
   addScroll();
 });
+

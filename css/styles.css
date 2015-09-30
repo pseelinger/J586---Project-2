@@ -1,3 +1,7 @@
+body{ 
+    background: center no-repeat url("../img/background.jpg");
+    background-size: cover;
+}
 h3{
     color: #3498db;
     text-align: center;
@@ -9,20 +13,75 @@ h3{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    min-width: 200px;
+    
+}
+.slide-text{
+    font-family: "Myriad Pro", sans-serif;
+     padding: 20px;
+     color: white;
+}
+.slide-pics{
+     padding-top: 20px;
+     max-height: 650px;
+     max-width: 500px;
+     padding-right: 10px;
+}
+@media screen and (min-width: 769px){
+.slide-pics{
+    width: 40%;
+    height: 40%;
+    float: right;
+}
+.slide-text{
+    font-size: 3em;
+}
+}
+@media screen and (max-width: 320px){
+    .slide-pics{
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .slide-text{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 768px){
+    .slide-pics{
+        width: 35%;
+        height: 35%;
+        float: right;
+    }
+    .slide-text{
+        font-size: 2em;
+    }
+}
+.slider-main div{
+    background-color: #23adad;
 }
 .slick-slide.slick-current.slick-active{
     outline: none;
 }
-.nav-pic{
-    height: 5%;
-    width: 80%;
-}
-.slider-nav div{
+.slider-nav img{
     margin: 20px;
     outline: none;
-    margin-top: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 200px;
 }
-div.slick-slide.slick-cloned.slick-active h3{
-    outline: 3px solid #3498db;
-    padding: 60px 30px 60px 30px;
+.slider-nav div{
+    margin-left: 10px;
+    margin-right: 10px;
+    outline: none;
+}
+.slick-slider{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#quiz{
+    background-color: #f0f0f0;
 }

@@ -1,36 +1,31 @@
-body{ 
-    background: center no-repeat url("../img/background.jpg");
-    background-size: cover;
-}
 h3{
-    color: #3498db;
+    color: white;
     text-align: center;
     font-size: 1.5em;
 }
-.slide-pic{
-    height: 55%;
-    width: 55%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 200px;
-    
+.info-slide{ 
+    background: center no-repeat url("../img/background.jpg");
+    background-size: cover;
+}
+.content-wrap{
+    background-color: #23adad;
+    margin: 20px;
 }
 .slide-text{
     font-family: "Myriad Pro", sans-serif;
      padding: 20px;
-     color: white;
+     color: #f0f0f0;
 }
 .slide-pics{
-     padding-top: 20px;
+     margin: 20px;
      max-height: 650px;
      max-width: 500px;
-     padding-right: 10px;
+     border: ridge 5px white;
 }
 @media screen and (min-width: 769px){
 .slide-pics{
-    width: 40%;
-    height: 40%;
+    width: 30%;
+    height: 30%;
     float: right;
 }
 .slide-text{
@@ -45,7 +40,10 @@ h3{
         margin-right: auto;
     }
     .slide-text{
-        font-size: 1em;
+        font-size: .75em;
+    }
+    .slick-dots li button{
+        visibility: hidden;
     }
 }
 @media screen and (min-width: 321px) and (max-width: 768px){
@@ -55,11 +53,12 @@ h3{
         float: right;
     }
     .slide-text{
-        font-size: 2em;
+        font-size: 1em;
     }
 }
 .slider-main div{
-    background-color: #23adad;
+    border-radius: 10px;
+    border: ridge 1px brown;
 }
 .slick-slide.slick-current.slick-active{
     outline: none;
@@ -82,6 +81,12 @@ h3{
     margin-right: 50px;
     margin-left: 50px;
 }
+.credits{
+    background-color: #23adad;
+}
+#quiz div{
+    border: none;
+}
 #quiz{
-    background-color: #f0f0f0;
+    background-color: #23adad;
 }

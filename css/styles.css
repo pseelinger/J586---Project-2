@@ -1,36 +1,60 @@
+*{
+    margin: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-image: url("../img/slide-3.jpg");
+    background-position: center;
+    background-size: cover;
+}
 h3{
     color: white;
     text-align: center;
     font-size: 1.5em;
 }
+.wrapper{
+    min-height: 100%;
+    margin: 0 auto -7em;
+}
 .info-slide{ 
-    background: center no-repeat url("../img/background.jpg");
     background-size: cover;
 }
 .content-wrap{
-    background-color: #23adad;
+    background-color: rgba(35, 173, 173, .5);
     margin: 20px;
 }
+.slide-title{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 4em;
+    text-decoration: underline;
+    color: gray;
+    margin: 10px;
+}
 .slide-text{
-    font-family: "Myriad Pro", sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
      padding: 20px;
-     color: #f0f0f0;
+     color: #d3d3d3;
+     opacity: 1;
 }
 .slide-pics{
      margin: 20px;
      max-height: 650px;
      max-width: 500px;
-     border: ridge 5px white;
 }
 @media screen and (min-width: 769px){
-.slide-pics{
-    width: 30%;
-    height: 30%;
-    float: right;
-}
-.slide-text{
-    font-size: 3em;
-}
+    .slide-pics{
+        width: 30%;
+        height: 30%;
+        float: right;
+    }
+    .slide-text{
+        font-size: 3em;
+    }
+    #slider-title{
+        font-size: 4em;
+    }
 }
 @media screen and (max-width: 320px){
     .slide-pics{
@@ -41,6 +65,13 @@ h3{
     }
     .slide-text{
         font-size: .75em;
+    }
+    #slider-title{
+        font-size: 1em;
+    }
+    .slide-title{
+        font-size: 2em;
+        text-align: center;
     }
     .slick-dots li button{
         visibility: hidden;
@@ -55,38 +86,39 @@ h3{
     .slide-text{
         font-size: 1em;
     }
+    #slider-title{
+        font-size: 3em;
+    }
+    .slick-dots li button{
+        visibility: hidden;
+    }
 }
 .slider-main div{
     border-radius: 10px;
-    border: ridge 1px brown;
 }
 .slick-slide.slick-current.slick-active{
-    outline: none;
-}
-.slider-nav img{
-    margin: 20px;
-    outline: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100px;
-    width: 200px;
-}
-.slider-nav div{
-    margin-left: 10px;
-    margin-right: 10px;
     outline: none;
 }
 .slick-slider{
     margin-right: 50px;
     margin-left: 50px;
 }
+.push{
+    height: 7em;
+}
 .credits{
-    background-color: #23adad;
+    background-color: rgba(35, 173, 173, .5);
+    height: 7em;
 }
 #quiz div{
     border: none;
 }
 #quiz{
-    background-color: #23adad;
+    background-color: rgba(0, 0, 0, .25);
+}
+#slider-title{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: Impact, Charcoal, sans-serif;
 }

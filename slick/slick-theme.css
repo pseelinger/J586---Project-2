@@ -144,6 +144,7 @@
     padding: 0;
 
     cursor: pointer;
+    margin-right: 50px;
 }
 .slick-dots li button
 {
@@ -152,22 +153,26 @@
 
     display: block;
 
-    width: 10px;
-    height: 10px;
+    width: 100px;
+    height: 20px;
     padding: 5px;
-    border-radius: 50%;
 
     cursor: pointer;
 
     color: blue;
-    border: 0;
+    border: 1px white solid;
     outline: none;
     background-color: #3498db;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
     outline: none;
+    background-color: gray;
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before

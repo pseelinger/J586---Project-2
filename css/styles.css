@@ -20,6 +20,7 @@ h3{
 }
 .info-slide{ 
     background-size: cover;
+    margin-bottom: -10px;
 }
 .content-wrap{
     background-color: rgba(35, 173, 173, .5);
@@ -32,7 +33,7 @@ h3{
     color: gray;
     margin: 10px;
 }
-.slide-text{
+.slide-text, #slide-text-center{
     font-family: Tahoma, Geneva, sans-serif;
      padding: 20px;
      color: #d3d3d3;
@@ -43,13 +44,16 @@ h3{
      max-height: 650px;
      max-width: 500px;
 }
+#slide-text-center{
+    text-align: center;
+}
 @media screen and (min-width: 769px){
     .slide-pics{
         width: 30%;
         height: 30%;
         float: right;
     }
-    .slide-text{
+    .slide-text, #slide-text-center{
         font-size: 3em;
     }
     #slider-title{
@@ -63,7 +67,7 @@ h3{
         margin-left: auto;
         margin-right: auto;
     }
-    .slide-text{
+    .slide-text, #slide-text-center{
         font-size: .75em;
     }
     #slider-title{
@@ -83,7 +87,7 @@ h3{
         height: 35%;
         float: right;
     }
-    .slide-text{
+    .slide-text, #slide-text-center{
         font-size: 1em;
     }
     #slider-title{

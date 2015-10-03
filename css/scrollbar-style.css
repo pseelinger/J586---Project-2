@@ -1,5 +1,5 @@
 /*************** SCROLLBAR BASE CSS ***************/
- 
+
 .scroll-wrapper {
     overflow: hidden !important;
     padding: 0 !important;
@@ -141,5 +141,5 @@
 .scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
 
 .scrollbar-inner{
-	max-height: 500px;
+	max-height: 800px;
 }

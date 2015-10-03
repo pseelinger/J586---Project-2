@@ -1,23 +1,6 @@
-function setupSlider() {
-  $(document).ready(function(){
-  $('.slider-main').slick({
-    speed: 600,
-    slidesToShow: 1,
-    fade: true,
-    mobileFirst: true,
-    adaptiveHeight: true,
-    arrows: false,
-    dots: true
-  });
-});};
-function addQuiz(){
-  var quiz = jQuery('#quiz').quiz('13OM8GsrccKhhbpNU_9wskCYqVDhkrrClrIOadVMihcY');
-  setupSlider();
-}
-function addScroll(){
+ function addScroll(){
   jQuery(document).ready(function(){
     jQuery('.scrollbar-inner').scrollbar();
-    addQuiz();
       $('.q-site').qtip({
     content: $('<iframe src="http://iwsf.com" />'),
     hide: {
@@ -45,7 +28,17 @@ function addScroll(){
 });
 })
 }
-$(document).ready(function(){
+ 
+   function addQuiz(){
+  var quiz = jQuery('#quiz').quiz('13OM8GsrccKhhbpNU_9wskCYqVDhkrrClrIOadVMihcY');
   addScroll();
+}
+
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+      slidesNavigation: true,
+      navigation: true
+      });
+    addQuiz();
 });
 

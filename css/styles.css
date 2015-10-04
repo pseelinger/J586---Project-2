@@ -7,6 +7,14 @@
     padding-left: 70px;
     background-color: rgba(35, 173, 173, .5);
 }
+.scrollbar-inner{
+    max-height: 800px;
+}
+@media screen and (max-height: 667px){
+    .scrollbar-inner{
+        max-height: 400px;
+    }
+}
 #quiz div{
     border: none;
 }
@@ -23,7 +31,7 @@
     font-size: 4em;
     text-align: center;
     background-image: url("../img/background.jpg");
-    color: white;
+    color: #d7d7d7;
 }
 #slide-one{
     background-image: url("../img/slide-1.jpg");
@@ -40,12 +48,22 @@
 #slide-five{
      background-image: url("../img/slide-5.jpg");
 }
-.arrow-down{
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top:  50px solid white;
+#credits{
+    background-color: rgba(0, 255, 0, .5);
+}
+#fp-nav ul{
+    margin-bottom: 15em;
+}
+#credits{
+    font-size: 2em;
+    color: white;
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+#credits p{
+    padding-left: 10px;
+}
+.fp-tooltip{
+    background-color: rgba(35, 173, 173, .5);
 }
 @media screen and (max-width: 740px){
     .fp-controlArrow{
@@ -62,5 +80,12 @@
     #slide-four, #slide-five{
         background-size: 100% 100%;
     }
+    #fp-nav ul li .fp-tooltip{
+    opacity: 1;
+    width: 50px;
+    }
+    #fp-nav ul{
+        margin-bottom: 20em;
+        margin-right: -5em;
+    }
 }
-

@@ -37,7 +37,9 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
       slidesNavigation: true,
-      navigation: true
+      navigation: true,
+      navigationTooltips: ['Slider', 'Quiz', 'Credits'],
+      loopBottom: true
       });
     addQuiz();
 });

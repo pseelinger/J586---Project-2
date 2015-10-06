@@ -1,6 +1,5 @@
- function addScroll(){
+ function addQ(){
   jQuery(document).ready(function(){
-    jQuery('.scrollbar-inner').scrollbar();
       $('.q-site').qtip({
     content: $('<iframe src="http://iwsf.com" />'),
     hide: {
@@ -31,7 +30,7 @@
  
    function addQuiz(){
   var quiz = jQuery('#quiz').quiz('13OM8GsrccKhhbpNU_9wskCYqVDhkrrClrIOadVMihcY');
-  addScroll();
+  addQ();
 }
 
 $(document).ready(function() {
@@ -39,7 +38,8 @@ $(document).ready(function() {
       slidesNavigation: true,
       navigation: true,
       navigationTooltips: ['Slider', 'Quiz', 'Credits'],
-      loopBottom: true
+      loopBottom: true,
+      scrollOverflow: true,
       });
     addQuiz();
 });

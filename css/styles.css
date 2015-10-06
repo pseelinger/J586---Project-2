@@ -11,39 +11,48 @@ a{
     text-decoration: none;
 }
 .slide p{
-    font-size: 2em;
+    font-size: 1em;
     color: white;
     font-family: "Geo Sans Light", Helvetica, sans-serif;
-    text-align: center;
-    padding-right: 70px;
-    padding-left: 70px;
+    text-align: left;
     background-color: rgba(35, 173, 173, .75);
+    padding-left: 10px;
 }
-.scrollbar-inner{
-    max-height: 800px;
+.fp-controlArrow{
+        visibility: hidden;
 }
-@media screen and (max-height: 667px){
-    .scrollbar-inner{
-        max-height: 400px;
-    }
+.fp-slidesNav{
+    background-color: white;
+}
+.section{
+    background-color: rgba(0, 255, 0, .75)
 }
 #quiz div{
     border: none;
 }
 #quiz{
     background-color: rgba(35, 173, 173, .25);
+    height: 100%;
+    max-width: 100%;
+    overflow: scroll;
+    
 }
-#intro-slide, #slide-one, #slide-two, #slide-three, #slide-four, #slide-five{
+#quiz ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+#intro-slide, #slide-one, #slide-two, #slide-three{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #intro-slide{
     font-family: Mohave, Helvetica, sans-serif;
-    font-size: 4em;
-    text-align: center;
     background-image: url("../img/background.jpg");
     color: #d7d7d7;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: bold;
 }
 #slide-one{
     background-image: url("../img/slide-1.jpg");
@@ -56,48 +65,61 @@ a{
 }
 #slide-four{
      background-image: url("../img/slide-4.jpg");
+     background-size: 100% 100%;
 }
 #slide-five{
      background-image: url("../img/slide-5.jpg");
+     background-size: 100% 100%;
 }
 #credits{
     background-color: rgba(0, 255, 0, .5);
 }
 #fp-nav ul{
-    margin-bottom: 15em;
+    margin-bottom: 20em;
 }
 #credits{
-    font-size: 2em;
+    font-size: 1em;
     color: white;
-    font-family: Tahoma, Helvetica, sans-serif;
+    font-family: "Geo Sans Light", Helvetica, sans-serif;
 }
 #credits p{
     padding-left: 10px;
 }
-.fp-tooltip{
-    background-color: rgba(35, 173, 173, .5);
+#credits h3{
+    padding-left: 5px;
 }
-@media screen and (max-width: 740px){
-    .fp-controlArrow{
-        visibility: hidden;
-    }
-    .slide p{
-        font-size: 1em;
-        text-align: left;
-        padding-left: 10px;
-    }
-    #intro-slide{
-        font-size: 2em;
-    }
-    #slide-four, #slide-five{
-        background-size: 100% 100%;
-    }
-    #fp-nav ul li .fp-tooltip{
+.fp-tooltip{
+    background-color: rgba(35, 173, 173, .85);
+}
+#fp-nav ul li .fp-tooltip{
     opacity: 1;
     width: 50px;
+}
+#fp-nav ul{
+        margin-bottom: 18em;
+}
+@media screen and (min-width: 740px){
+    .fp-controlArrow{
+        visibility: visible;
     }
-    #fp-nav ul{
-        margin-bottom: 20em;
-        margin-right: -5em;
+    .slide p{
+        text-align: center;
+        padding-right: 70px;
+        padding-left: 70px;
+        font-size: 2em;
+    }
+    #fp-nav ul li .fp-tooltip{
+        opacity: 0;
+        width: 0;
+    }
+    #intro-slide{
+        text-align: center;
+        font-size: 4em;
+    }
+    #intro-slide, #slide-one, #slide-two, #slide-three, #slide-four, #slide-five{
+        background-size: cover;
+    }
+    #credits{
+        font-size: 2em;
     }
 }

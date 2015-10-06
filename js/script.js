@@ -1,4 +1,9 @@
  function addQ(){
+  $(function(){
+    $('#inner-content-div').slimScroll({
+        height: '250px'
+    });
+});
   jQuery(document).ready(function(){
       $('.q-site').qtip({
     content: $('<iframe src="http://iwsf.com" />'),
@@ -39,8 +44,6 @@ $(document).ready(function() {
       navigation: true,
       navigationTooltips: ['Slider', 'Quiz', 'Credits'],
       loopBottom: true,
-      scrollOverflow: true,
       });
     addQuiz();
 });
-

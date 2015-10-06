@@ -43,7 +43,7 @@ $(document).ready(function() {
       slidesNavigation: true,
       navigation: true,
       navigationTooltips: ['Slider', 'Quiz', 'Credits'],
-      loopBottom: true,
+      scrollOverflow: true
       });
     addQuiz();
 });
